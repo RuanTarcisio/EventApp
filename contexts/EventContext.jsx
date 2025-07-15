@@ -5,18 +5,17 @@ import React, {
   useEffect,
   useState,
   useMemo,
-  Children,
 } from "react";
 
 export const EventContext = createContext();
 
 const EventProvider = ({ children }) => {
   const [events, setEvents] = useState([]);
-
   const [isLoading, setIsLoading] = useState(false);
-
   const [error, setError] = useState(null);
+  const [showEventList, setShowEventList] = useState(false);
 
+  // current filter inputs
   const [searchTerm, setSearchTerm] = useState("");
 
   //applied filters (after submit)
@@ -36,7 +35,6 @@ const EventProvider = ({ children }) => {
       return matchesSearch;
     });
   }, [events, appliedFilters]);
-  console.log(filteredEvents);
 
   //fetch events
   useEffect(() => {
@@ -60,12 +58,18 @@ const EventProvider = ({ children }) => {
   }, []);
 
   const handleSubmit = () => {
-    setApplietFilters({searchTerm});
-  }
+    setIsLoading(true);
+    setShowEventList(true);
+    setApplietFilters({ searchTerm });
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2500);
+  };
 
   const handleClearSearch = () => {
     setSearchTerm("");
-  }
+    setShowEventList(false);
+  };
 
   return (
     <EventContext.Provider
@@ -78,7 +82,7 @@ const EventProvider = ({ children }) => {
         filteredEvents,
         handleClearSearch,
         handleSubmit,
-
+        showEventList,
       }}
     >
       {children}
