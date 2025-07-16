@@ -7,7 +7,7 @@ import { EventContext } from "@/contexts/EventContext";
 
 const Home = () => {
   const { showEventList, handleClearSearch } = useContext(EventContext);
-  console.log(showEventList);
+
   return (
     <div>
       <div className="flex flex-col justify-center items-center">

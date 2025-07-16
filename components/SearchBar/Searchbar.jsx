@@ -4,6 +4,7 @@ import { EventContext } from "@/contexts/EventContext";
 // components
 import EventSearch from "./EventSearch";
 import EventLocation from "./EventLocation";
+import EventDate from "./EventDate";
 
 const Searchbar = () => {
   const { handleSubmit } = useContext(EventContext);
@@ -17,7 +18,7 @@ const Searchbar = () => {
       <EventLocation />
 
       {/*event date*/}
-      <div>Event Date</div>
+      <EventDate />
       {/*event location*/}
       <div>Event Type</div>
       <button onClick={handleSubmit} className="btn btn-accent">
