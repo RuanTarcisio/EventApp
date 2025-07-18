@@ -14,78 +14,74 @@ const EventProvider = ({ children }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("");
   const [selectedDate, setSelectedDate] = useState("");
+  const [selectedType, setSelectedType] = useState("");
 
   //applied filters (after submit)
   const [appliedFilters, setApplietFilters] = useState({
     searchTerm: "",
     selectedLocation: "",
     selectedDate: null,
+    selectedType: "",
   });
 
-const filteredEvents = useMemo(() => {
-  const today = new Date();
-  // Normaliza 'today' para o início do dia no fuso horário local
-  const todayMidnightLocal = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+  const filteredEvents = useMemo(() => {
+    const today = new Date();
+    // Cria 'today' como meia-noite UTC (do seu dia local atual)
+    const todayMidnightUTC = new Date(
+      Date.UTC(today.getFullYear(), today.getMonth(), today.getDate())
+    );
 
-  return events.filter((event) => {
-    // 1. Converte a string 'event.date' para um objeto Date.
-    // Usamos 'event.date + "T00:00:00"' para forçar a interpretação como início do dia local,
-    // ou apenas new Date(event.date) e depois ajustar.
-    // A forma mais segura é: new Date(year, month, day) para criar no fuso horário local.
-    const eventYear = parseInt(event.date.substring(0, 4));
-    const eventMonth = parseInt(event.date.substring(5, 7)) - 1; // Mês é 0-indexado
-    const eventDay = parseInt(event.date.substring(8, 10));
+    return events.filter((event) => {
+      // 1. Parseia a data do evento da string (assumindo que "YYYY-MM-DD" é o dia no fuso horário do evento)
+      const eventYear = parseInt(event.date.substring(0, 4));
+      const eventMonth = parseInt(event.date.substring(5, 7)) - 1; // Mês é 0-indexado
+      const eventDay = parseInt(event.date.substring(8, 10));
 
-    // Cria a data do evento à meia-noite no fuso horário local
-    const eventDateMidnightLocal = new Date(eventYear, eventMonth, eventDay);
+      // Cria a data do evento à meia-noite UTC para comparação consistente
+      const eventDateMidnightUTC = new Date(
+        Date.UTC(eventYear, eventMonth, eventDay)
+      );
 
-    // Verifica se o evento já passou
-    if (eventDateMidnightLocal < todayMidnightLocal) {
+      // Verifica se o evento já passou (comparação em UTC)
+      if (eventDateMidnightUTC < todayMidnightUTC) {
         return false;
-    }
+      }
 
-    // chech search term
-    const matchesSearch = appliedFilters.searchTerm
-      ? event.title
-          .toLowerCase()
-          .includes(appliedFilters.searchTerm.toLowerCase())
+      // chech search term
+      const matchesSearch = appliedFilters.searchTerm
+        ? event.title
+            .toLowerCase()
+            .includes(appliedFilters.searchTerm.toLowerCase())
         : true;
 
-    // check location
-    const matchesLocation = appliedFilters.selectedLocation
-      ? event.location.toLowerCase() ===
+      // check location
+      const matchesLocation = appliedFilters.selectedLocation
+        ? event.location.toLowerCase() ===
           appliedFilters.selectedLocation.toLowerCase()
         : true;
 
-    let matchesDate = true; // Assume true by default
-    if (appliedFilters.selectedDate) {
-      // Normaliza 'selectedDate' (do DatePicker) para o início do dia no fuso horário local
-      const selectedDateMidnightLocal = new Date(
-        appliedFilters.selectedDate.getFullYear(),
-        appliedFilters.selectedDate.getMonth(),
-        appliedFilters.selectedDate.getDate()
-      );
+      let matchesDate = true;
+      if (appliedFilters.selectedDate) {
+        // Cria a data selecionada à meia-noite UTC
+        const selectedDateMidnightUTC = new Date(
+          Date.UTC(
+            appliedFilters.selectedDate.getFullYear(),
+            appliedFilters.selectedDate.getMonth(),
+            appliedFilters.selectedDate.getDate()
+          )
+        );
+        // Compara os milissegundos UTC
+        matchesDate =
+          eventDateMidnightUTC.getTime() === selectedDateMidnightUTC.getTime();
+      }
 
-      // Compara os milissegundos para ver se são o mesmo dia local
-      matchesDate = eventDateMidnightLocal.getTime() === selectedDateMidnightLocal.getTime();
-    }
+      const matchesType = appliedFilters.selectedType
+        ? event.type.toLowerCase() === appliedFilters.selectedType.toLowerCase()
+        : true;
 
-    // Logs para depuração mais detalhada
-    console.log('--- Evento:', event.title, '---');
-    console.log('Data do Evento (original):', event.date);
-    console.log('Data do Evento (normalizada local):', eventDateMidnightLocal);
-    console.log('Data Selecionada (normalizada local):', appliedFilters.selectedDate ? new Date(appliedFilters.selectedDate.getFullYear(), appliedFilters.selectedDate.getMonth(), appliedFilters.selectedDate.getDate()) : 'N/A');
-    console.log('Hoje (normalizado local):', todayMidnightLocal);
-    console.log('EventDateMidnightLocal < TodayMidnightLocal:', eventDateMidnightLocal < todayMidnightLocal);
-    console.log('matchesSearch:', matchesSearch);
-    console.log('matchesLocation:', matchesLocation);
-    console.log('matchesDate:', matchesDate);
-    console.log('Resultado Final para este evento:', matchesSearch && matchesLocation && matchesDate);
-
-
-    return matchesSearch && matchesLocation && matchesDate;
-  });
-}, [events, appliedFilters]);
+      return matchesSearch && matchesLocation && matchesDate && matchesType;
+    });
+  }, [events, appliedFilters]);
 
   //fetch events
   useEffect(() => {
@@ -111,7 +107,12 @@ const filteredEvents = useMemo(() => {
   const handleSubmit = () => {
     setIsLoading(true);
     setShowEventList(true);
-    setApplietFilters({ searchTerm, selectedLocation, selectedDate });
+    setApplietFilters({
+      searchTerm,
+      selectedLocation,
+      selectedDate,
+      selectedType,
+    });
     setTimeout(() => {
       setIsLoading(false);
     }, 2500);
@@ -122,6 +123,7 @@ const filteredEvents = useMemo(() => {
     setShowEventList(false);
     setSelectedLocation("");
     setSelectedDate(null);
+    setSelectedType("");
   };
 
   return (
@@ -140,6 +142,8 @@ const filteredEvents = useMemo(() => {
         selectedLocation,
         selectedDate,
         setSelectedDate,
+        selectedType,
+        setSelectedType,
       }}
     >
       {children}
