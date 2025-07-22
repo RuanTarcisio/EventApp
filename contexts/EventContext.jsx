@@ -85,24 +85,28 @@ const EventProvider = ({ children }) => {
 
   //fetch events
   useEffect(() => {
-    const fetchEvents = async () => {
-      //start loader
-      setIsLoading(true);
-      try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/events`);
-        if (!res.ok) throw new Error("Failed to fetch events.");
-        const data = await res.json();
-        setEvents(data);
-        // stop loader
-        setIsLoading(false);
-      } catch (err) {
-        setError(err.message);
-        setIsLoading(false);
-      }
-    };
+  const fetchEvents = async () => {
+    setIsLoading(true);
+    try {
+      // URL condicional para desenvolvimento/produção
+      const apiUrl = process.env.NODE_ENV === 'development'
+        ? 'http://localhost:4000/events'
+        : 'https://eventapp-5yie.onrender.com/api/events';
+      
+      const res = await fetch(apiUrl);
+      
+      if (!res.ok) throw new Error("Failed to fetch events.");
+      const data = await res.json();
+      setEvents(data);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
-    fetchEvents();
-  }, []);
+  fetchEvents();
+}, []);
 
   const handleSubmit = () => {
     setIsLoading(true);
