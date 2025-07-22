@@ -9,6 +9,8 @@ zoom_x86_64.rpm
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+ 
+.env
 
 # testing
 /coverage
