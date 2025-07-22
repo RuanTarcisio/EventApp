@@ -88,18 +88,18 @@ const EventProvider = ({ children }) => {
   const fetchEvents = async () => {
     setIsLoading(true);
     try {
-      // URL condicional para desenvolvimento/produção
+      // URL universal que funciona em ambos ambientes
       const apiUrl = process.env.NODE_ENV === 'development'
         ? 'http://localhost:4000/events'
-        : 'https://eventapp-5yie.onrender.com/api/events';
+        : `${window.location.origin}/api/events`;
       
       const res = await fetch(apiUrl);
       
-      if (!res.ok) throw new Error("Failed to fetch events.");
+      if (!res.ok) throw new Error("Failed to fetch events");
       const data = await res.json();
       setEvents(data);
     } catch (err) {
-      setError(err.message);
+      setError(err.message || "Error fetching data");
     } finally {
       setIsLoading(false);
     }
