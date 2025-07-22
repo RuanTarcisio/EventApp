@@ -19,7 +19,6 @@ const EventType = () => {
     "All type",
     ...new Set(events.map((event) => event.type)),
   ];
-  console.log(uniqueTypes);
 
   return (
     <div className="flex items-center gap-[10px] w-full xl:w-[190px] select-none">
