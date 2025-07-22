@@ -21,7 +21,7 @@ const EventList = () => {
     return (
       <div>
         <h4 className="h4 mb-6">{filteredEvents.length} results found</h4>
-        <div className="grid grid-cols-1 xl:grid-cols-4 gap-[30px] mb-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-[30px] mb-32">
           {filteredEvents.map((event, index) => {
             return (
               <div key={index}>
