@@ -1,21 +1,18 @@
 "use client";
 
-import Searchbar from "@/components/SearchBar/Searchbar";
 import EventList from "@/components/Events/EventList";
 import { useContext } from "react";
 import { EventContext } from "@/contexts/EventContext";
+import Hero from "@/components/Hero";
 
 const Home = () => {
   const { showEventList, handleClearSearch } = useContext(EventContext);
 
   return (
     <div>
-      <div className="flex flex-col justify-center items-center">
-        <Searchbar />
-        {/* clear search */}
-        <button onClick={() => handleClearSearch()} className="text-accent">
-          clear search
-        </button>
+      <Hero />
+      <div className="flex flex-col justify-center items-center"> 
+       
       </div>
       {showEventList ? (
         <div className="container mx-auto">
@@ -23,12 +20,14 @@ const Home = () => {
         </div>
       ) : (
         <div>
-          {/* upcoming events slider */}
-          <div>upcoming events slider</div>
-          {/* download app section */}
-          <div>download app section</div>
-          {/* recomended events slider*/}
-          <div>recomended events slider</div>
+          <div className="container mx-auto">
+            {/* upcoming events slider */}
+            <div>upcoming events slider</div>
+            {/* download app section */}
+            <div>download app section</div>
+            {/* recomended events slider*/}
+            <div>recomended events slider</div>
+          </div>
         </div>
       )}
     </div>
