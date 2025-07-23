@@ -90,8 +90,8 @@ const EventProvider = ({ children }) => {
     try {
       // URL universal que funciona em ambos ambientes
       const apiUrl = process.env.NODE_ENV === 'development'
-        ? 'http://localhost:4000/events'
-        : `${window.location.origin}/api/events`;
+  ? 'http://localhost:4000/events'
+  : 'https://eventapp-5yie.onrender.com/api/events';
       
       const res = await fetch(apiUrl);
       
