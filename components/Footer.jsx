@@ -2,25 +2,22 @@ import Image from "next/image";
 import Link from "next/link";
 
 const socials = [
+ 
   {
-    src: "/assets/footer/facebook.svg",
-    path: "",
+    src: "/assets/footer/linkedin.svg",
+    path: "https://www.linkedin.com/in/ruan-tarcisio/",
   },
   {
-    src: "/assets/footer/x.svg",
-    path: "",
+    src: "/assets/footer/instagram2.svg",
+    path: "https://www.instagram.com/dev.correria/",
   },
   {
-    src: "/assets/footer/instagram.svg",
-    path: "",
+    src: "/assets/footer/gmail1.svg",
+    path: "dev.correria@gmail.com",
   },
   {
-    src: "/assets/footer/youtube.svg",
-    path: "",
-  },
-  {
-    src: "/assets/footer/pinterest.svg",
-    path: "",
+    src: "/assets/footer/internet1.svg",
+    path: "https://devcorreiaportfolio.vercel.app/",
   },
 ];
 
@@ -53,7 +50,7 @@ const Footer = () => {
                 <Link
                   href={icon.path}
                   key={index}
-                  className="relative w-[20px] h-[20px]"
+                  className="relative w-[30px] h-[30px]"
                 >
                   <Image src={icon.src} fill alt="" />
                 </Link>
