@@ -7,6 +7,7 @@ import { EventContext } from "@/contexts/EventContext";
 import Hero from "@/components/Hero";
 import EventList from "@/components/Events/EventList";
 import UpcomingEvents from "@/components/UpcomingEvents";
+import RecommendedEvents from "@/components/RecommendedEvents";
 
 const Home = () => {
   const { showEventList, handleClearSearch } = useContext(EventContext);
@@ -14,9 +15,7 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <div className="flex flex-col justify-center items-center"> 
-       
-      </div>
+      <div className="flex flex-col justify-center items-center"></div>
       {showEventList ? (
         <div className="container mx-auto">
           <EventList />
@@ -29,7 +28,7 @@ const Home = () => {
             {/* download app section */}
             <div>download app section</div>
             {/* recomended events slider*/}
-            <div>recomended events slider</div>
+            <RecommendedEvents />
           </div>
         </div>
       )}
