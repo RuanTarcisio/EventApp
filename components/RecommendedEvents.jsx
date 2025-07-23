@@ -29,7 +29,7 @@ const RecommendedEvents = () => {
   const filterRecommendedEvents = events.filter(
     (event) => event.recommended === true
   );
-  console.log(filterRecommendedEvents.length);
+
   const swiperRef = useRef(null);
 
   return (

@@ -4,18 +4,19 @@ import { BiCalendar, BiTime, BiMap } from "react-icons/bi";
 const Event = ({ event }) => {
   return (
     <div className="bg-white/5 hover:bg-white/10 transition-all rounded-3xl flex flex-col justify-start p-4 w-full max-w-[320px] sm:max-w-full mx-auto sm:mx-0">
-  <div className="relative w-full aspect-[4/3] mb-10">
-    <Image
-      src={event.img_sm}
-      fill
-      alt=""
-      quality={100}
-      className="rounded-2xl object-cover"
-    />
-    <div className="absolute -bottom-[24px] left-4 bg-accent w-[110px] h-[40px] text-[13px] uppercase font-medium rounded-full flex items-center justify-center shadow-md">
-      {event.type}
-    </div>
-  </div>
+      <div className="relative w-full aspect-[4/3] mb-10">
+        <Image
+          src={event.img_sm}
+          fill
+          alt=""
+          quality={100}
+          className="rounded-2xl object-cover"
+          sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, (max-width: 1309px) 33vw, 25vw"
+        />
+        <div className="absolute -bottom-[24px] left-4 bg-accent w-[110px] h-[40px] text-[13px] uppercase font-medium rounded-full flex items-center justify-center shadow-md">
+          {event.type}
+        </div>
+      </div>
       <div className="pl-4 flex flex-col justify-between h-[50%]">
         <div>
           <div className="flex items-center gap-3 text-accent mb-2">

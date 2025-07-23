@@ -41,7 +41,7 @@ export default {
       backgroundImage: {
         hero_1: "url(/assets/hero/hero-bg1.png)",
         hero_2: "url(/assets/hero/hero-bg2.png)",
-        pattern: "url(/assets/hero/pattern_bg.png)",
+        pattern: "url(/assets/pattern_bg.png)",
       },
     },
   },
