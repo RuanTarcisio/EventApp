@@ -1,18 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Remova ou corrija a configuração experimental
-  experimental: {
-    serverActions: {
-      enabled: true
-    }
-  },
-  
-  // Mantenha o rewrites para o json-server
+  output: 'standalone', // Adicione esta linha
   async rewrites() {
-    return [
+    return process.env.NODE_ENV === 'production' ? [] : [
       {
         source: '/api/:path*',
-        destination: `http://localhost:4000/:path*`
+        destination: 'http://localhost:4000/:path*'
       }
     ]
   }
