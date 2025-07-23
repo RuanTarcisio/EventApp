@@ -50,6 +50,7 @@ const Footer = () => {
                 <Link
                   href={icon.path}
                   key={index}
+                  target="_blank"
                   className="relative w-[30px] h-[30px]"
                 >
                   <Image src={icon.src} fill alt="" />
