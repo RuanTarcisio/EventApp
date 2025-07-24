@@ -8,7 +8,7 @@
       "date": "2025-11-15",
       "hour": "20:00",
       "title": "Rock Legends Live Concert",
-      "location": "Square Garden, New York",
+      "location": "Espaço das Américas, São Paulo",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
       "seats": [
         {
@@ -93,7 +93,7 @@
       "date": "2025-12-05",
       "hour": "19:00",
       "title": "Jazz Night Live",
-      "location": "Blue Note, New York",
+      "location": "Vivo Rio, Rio de Janeiro",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
       "seats": [
         {
@@ -177,8 +177,8 @@
       "img_lg": "/assets/upcoming/img/art/3-lg.png",
       "date": "2025-12-20",
       "hour": "10:00",
-      "title": "Street Art Festival",
-      "location": "Art District, Berlin",
+      "title": "Festival de Arte Urbana",
+      "location": "Vila Madalena, São Paulo",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -281,8 +281,8 @@
       "img_lg": "/assets/upcoming/img/art/2-lg.png",
       "date": "2025-11-01",
       "hour": "11:00",
-      "title": "Impressionist Art Exhibition",
-      "location": "Louvre Museum, Paris",
+      "title": "Exposição de Arte Impressionista",
+      "location": "Museu de Arte de São Paulo (MASP), São Paulo",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.paintings.",
       "seats": [
         {
@@ -366,8 +366,8 @@
       "img_lg": "/assets/upcoming/img/art/1-lg.png",
       "date": "2025-11-10",
       "hour": "18:00",
-      "title": "Art Nouveau Exhibition",
-      "location": "Art Museum, New York",
+      "title": "Exposição de Art Nouveau",
+      "location": "Museu Nacional de Belas Artes, Rio de Janeiro",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
       "seats": [
         {
@@ -451,8 +451,8 @@
       "img_lg": "/assets/upcoming/img/food/1-lg.png",
       "date": "2025-11-20",
       "hour": "14:00",
-      "title": "Gourmet Food Festival",
-      "location": "Central Park, New York",
+      "title": "Festival Gastronômico Gourmet",
+      "location": "Parque Ibirapuera, São Paulo",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
       "seats": [
         {
@@ -536,8 +536,8 @@
       "img_lg": "/assets/upcoming/img/food/2-lg.png",
       "date": "2025-12-10",
       "hour": "12:00",
-      "title": "Vegan Delights Cooking Class",
-      "location": "Culinary School, Los Angeles",
+      "title": "Aula de Culinária Vegan Delights",
+      "location": "Escola de Culinária Le Cordon Bleu, Rio de Janeiro",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -602,8 +602,8 @@
       "img_lg": "/assets/upcoming/img/sport/2-lg.png",
       "date": "2025-12-15",
       "hour": "09:30",
-      "title": "International Cricket Tournament",
-      "location": "Cricket Ground, London",
+      "title": "Torneio Internacional de Críquete",
+      "location": "Estádio do Morumbi, São Paulo",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
       "seats": [
         {
@@ -668,8 +668,8 @@
       "img_lg": "/assets/upcoming/img/sport/1-lg.png",
       "date": "2025-11-25",
       "hour": "16:00",
-      "title": "Basketball Championship Final",
-      "location": "Staples Center, Los Angeles",
+      "title": "Final do Campeonato Brasileiro de Basquete",
+      "location": "Ginásio do Ibirapuera, São Paulo",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -772,8 +772,8 @@
       "img_lg": "/assets/upcoming/img/music/3-lg.png",
       "date": "2025-12-25",
       "hour": "20:00",
-      "title": "Classical Symphony Performance",
-      "location": "Concert Hall, Vienna",
+      "title": "Performance de Sinfonia Clássica",
+      "location": "Theatro Municipal, Rio de Janeiro",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -857,8 +857,8 @@
       "img_lg": "/assets/upcoming/img/food/3-lg.png",
       "date": "2025-09-01",
       "hour": "14:00",
-      "title": "BBQ Feast Extravaganza",
-      "location": "Park Plaza, Miami",
+      "title": "Festival de Churrasco Extravaganza",
+      "location": "Parque da Cidade, Brasília",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -942,8 +942,8 @@
       "img_lg": "/assets/upcoming/img/sport/3-lg.png",
       "date": "2025-09-05",
       "hour": "17:00",
-      "title": "Football World Cup Qualifiers",
-      "location": "Wembley Stadium, London",
+      "title": "Eliminatórias da Copa do Mundo de Futebol",
+      "location": "Arena Corinthians, São Paulo",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -1027,8 +1027,8 @@
       "img_lg": "/assets/upcoming/img/art/4-lg.png",
       "date": "2025-08-10",
       "hour": "18:00",
-      "title": "Modern Art Symposium",
-      "location": "Art Institute, Chicago",
+      "title": "Simpósio de Arte Moderna",
+      "location": "Instituto Tomie Ohtake, São Paulo",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -1112,8 +1112,8 @@
       "img_lg": "/assets/upcoming/img/music/4-lg.png",
       "date": "2025-08-15",
       "hour": "19:00",
-      "title": "Opera Gala Performance",
-      "location": "Scala, Milan",
+      "title": "Performance de Gala de Ópera",
+      "location": "Teatro Amazonas, Manaus",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -1178,8 +1178,8 @@
       "img_lg": "/assets/upcoming/img/food/4-lg.png",
       "date": "2025-11-20",
       "hour": "13:00",
-      "title": "Sushi Masterclass",
-      "location": "Sushi School, Tokyo",
+      "title": "Masterclass de Sushi",
+      "location": "Escola de Culinária Nihonryori, São Paulo",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -1244,8 +1244,8 @@
       "img_lg": "/assets/upcoming/img/sport/4-lg.png",
       "date": "2025-12-23",
       "hour": "10:00",
-      "title": "Tennis Open Championship",
-      "location": "Roland Garros, Paris",
+      "title": "Campeonato Brasileiro de Tênis",
+      "location": "Parque Olímpico, Rio de Janeiro",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -1369,10 +1369,10 @@
       "type": "art",
       "img_sm": "/assets/upcoming/img/art/5-sm.png",
       "img_lg": "/assets/upcoming/img/art/5-lg.png",
-      "date": "11-11-2025",
+      "date": "2025-11-11",
       "hour": "11:00",
-      "title": "Photography Exhibition",
-      "location": "National Gallery, London",
+      "title": "Exposição de Fotografia",
+      "location": "Pinacoteca de São Paulo, São Paulo",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -1437,8 +1437,8 @@
       "img_lg": "/assets/upcoming/img/music/5-lg.png",
       "date": "2025-09-05",
       "hour": "20:00",
-      "title": "Indie Rock Festival",
-      "location": "The Forum, Los Angeles",
+      "title": "Festival de Indie Rock",
+      "location": "Fundição Progresso, Rio de Janeiro",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -1503,8 +1503,8 @@
       "img_lg": "/assets/upcoming/img/food/5-lg.png",
       "date": "2025-04-10",
       "hour": "12:00",
-      "title": "Vegan Food Festival",
-      "location": "Green Park, Los Angeles",
+      "title": "Festival de Comida Vegana",
+      "location": "Parque da Jaqueira, Recife",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
