@@ -93,6 +93,7 @@ const EventProvider = ({ children }) => {
           window.location.hostname === "localhost"
             ? "http://localhost:4000/events"
             : `https://${window.location.host}/events`; // Mude para /events direto
+        const res = await fetch(apiUrl);
 
         if (!res.ok) throw new Error("Failed to fetch events");
         const data = await res.json();
