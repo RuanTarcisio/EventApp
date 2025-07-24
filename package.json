@@ -2,7 +2,9 @@
   "name": "eventz",
   "version": "0.1.0",
   "private": true,
-   "scripts": {
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start -p 3000",
     "server": "json-server --host 0.0.0.0 --watch db.json --port 4000",
     "render:start": "npm run server & npm run start"
