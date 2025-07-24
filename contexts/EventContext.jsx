@@ -88,11 +88,11 @@ const EventProvider = ({ children }) => {
     const fetchEvents = async () => {
       setIsLoading(true);
       try {
-        // URL universal que funciona em ambos ambientes
         const apiUrl =
           window.location.hostname === "localhost"
             ? "http://localhost:4000/events"
-            : `https://${window.location.host}/events`; // Mude para /events direto
+            : "https://eventapp-5yie.onrender.com/events";
+
         const res = await fetch(apiUrl);
 
         if (!res.ok) throw new Error("Failed to fetch events");
