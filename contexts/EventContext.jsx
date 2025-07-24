@@ -85,28 +85,27 @@ const EventProvider = ({ children }) => {
 
   //fetch events
   useEffect(() => {
-  const fetchEvents = async () => {
-    setIsLoading(true);
-    try {
-      // URL universal que funciona em ambos ambientes
-      const apiUrl = process.env.NODE_ENV === 'development'
-  ? 'http://localhost:4000/events'
-  : 'https://eventapp-5yie.onrender.com/api/events';
-      
-      const res = await fetch(apiUrl);
-      
-      if (!res.ok) throw new Error("Failed to fetch events");
-      const data = await res.json();
-      setEvents(data);
-    } catch (err) {
-      setError(err.message || "Error fetching data");
-    } finally {
-      setIsLoading(false);
-    }
-  };
+    const fetchEvents = async () => {
+      setIsLoading(true);
+      try {
+        // URL universal que funciona em ambos ambientes
+        const apiUrl =
+          window.location.hostname === "localhost"
+            ? "http://localhost:4000/events"
+            : `https://${window.location.host}/events`; // Mude para /events direto
 
-  fetchEvents();
-}, []);
+        if (!res.ok) throw new Error("Failed to fetch events");
+        const data = await res.json();
+        setEvents(data);
+      } catch (err) {
+        setError(err.message || "Error fetching data");
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchEvents();
+  }, []);
 
   const handleSubmit = () => {
     setIsLoading(true);
