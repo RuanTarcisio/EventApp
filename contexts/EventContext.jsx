@@ -89,10 +89,9 @@ const EventProvider = ({ children }) => {
       setIsLoading(true);
       try {
         const apiUrl =
-          window.location.hostname === "localhost"
+          process.env.NODE_ENV === "development"
             ? "http://localhost:4000/events"
-            : "https://eventapp-5yie.onrender.com/events";
-
+            : `https://${window.location.hostname}/events`;
         const res = await fetch(apiUrl);
 
         if (!res.ok) throw new Error("Failed to fetch events");
