@@ -91,7 +91,7 @@ const EventProvider = ({ children }) => {
         const apiUrl =
           process.env.NODE_ENV === "development"
             ? "http://localhost:4000/events"
-            : `https://${window.location.hostname}/events`;
+            : `https://eventapp-5yie.onrender.com/api/events`;
         const res = await fetch(apiUrl);
 
         if (!res.ok) throw new Error("Failed to fetch events");

@@ -12,12 +12,12 @@ const socials = [
     path: "https://www.instagram.com/dev.correria/",
   },
   {
-    src: "/assets/footer/gmail1.svg",
-    path: "dev.correria@gmail.com",
+    src: "/assets/footer/whatsapp.svg",
+    path: "https://wa.me/5571992266662?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os",
   },
   {
     src: "/assets/footer/internet1.svg",
-    path: "https://devcorreiaportfolio.vercel.app/",
+    path: "https://devcorreria.vercel.app/",
   },
 ];
 
