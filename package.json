@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start -p $PORT",
-    "server": "json-server --host 0.0.0.0 --watch db.json --port 4000",
+    "build": "next build",
+    "server": "json-server --host 0.0.0.0 --watch db.json --port 4000 --static ./public",
     "render:start": "npm run server & npm run start"
   },
   "dependencies": {

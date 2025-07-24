@@ -1,13 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async headers() {
-    return [{
-      source: '/api/:path*',
-      headers: [
-        { key: 'Access-Control-Allow-Origin', value: '*' }
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: '/api/:path*',
+          destination: 'http://localhost:4000/:path*'
+        }
       ]
-    }]
+    }
   }
 }
-
 export default nextConfig
