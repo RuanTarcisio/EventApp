@@ -70,7 +70,7 @@ const RecommendedEvents = () => {
           {/* Botões de navegação personalizados */}
           <button
             onClick={() => swiperRef.current?.slidePrev()}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center cursor-pointer hover:bg-gray-100 transition-colors opacity-0 group-hover:opacity-100"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center cursor-pointer hover:bg-gray-100 transition-all opacity-100 md:opacity-0 md:group-hover:opacity-100"
             aria-label="Anterior"
           >
             <svg
@@ -89,7 +89,7 @@ const RecommendedEvents = () => {
           </button>
           <button
             onClick={() => swiperRef.current?.slideNext()}
-            className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center cursor-pointer hover:bg-gray-100 transition-colors opacity-0 group-hover:opacity-100`}
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center cursor-pointer hover:bg-gray-100 transition-all opacity-100 md:opacity-0 md:group-hover:opacity-100"
             aria-label="Próximo"
           >
             <svg

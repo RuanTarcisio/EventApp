@@ -1,7 +1,13 @@
+import { EventContext } from "@/contexts/EventContext";
 import Image from "next/image";
+import { useContext } from "react";
 import { BiCalendar, BiTime, BiMap } from "react-icons/bi";
 
 const Event = ({ event }) => {
+  const { formatDate } = useContext(EventContext);
+  const dbDate = event.date;
+  const formattedDate = formatDate(dbDate);
+
   return (
     <div className="bg-white/5 hover:bg-white/10 transition-all rounded-3xl flex flex-col justify-start p-4 w-full max-w-[320px] sm:max-w-full mx-auto sm:mx-0">
       <div className="relative w-full aspect-[4/3] mb-10">
@@ -23,7 +29,7 @@ const Event = ({ event }) => {
             <div className="flex items-center gap-1">
               <BiCalendar />
               {/* hardcoded date, to change*/}
-              <div className="text-[15px]">15.06.25</div>
+              <div className="text-[15px] capitalize">{formattedDate}</div>
             </div>
 
             <div className="flex items-center gap-1">

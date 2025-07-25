@@ -27,8 +27,8 @@ const UpcomingEvents = () => {
   const [eventValue, setEventValue] = useState("all");
   const [filteredEvents, setFilteredEvents] = useState([]);
 
-const swiperRef = useRef(null);
-  
+  const swiperRef = useRef(null);
+
   useEffect(() => {
     const filterEvents = () => {
       if (eventValue === "all") {
@@ -111,57 +111,77 @@ const swiperRef = useRef(null);
       </div>
       {/* slider */}
       {filteredEvents.length > 0 ? (
-      <div className="relative group"> {/* Adicionei group para efeitos hover */}
-        <Swiper
-          ref={swiperRef}
-          slidesPerView={1}
-          spaceBetween={30}
-          pagination={{ dynamicBullets: true, clickable: true }}
-          breakpoints={{
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-            1310: { slidesPerView: 4 },
-          }}
-          modules={[Pagination, Navigation]}
-          className="relative"
-          onSwiper={(swiper) => {
-            // Atribui a instância do Swiper à ref
-            swiperRef.current = swiper;
-          }}
-        >
-          {filteredEvents.map((event, index) => (
-            <SwiperSlide key={index} className="select-none">
-              <Link href={`/event/${event.id}`}>
-                <Event event={event} />
-              </Link>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-
-        {/* Botões de navegação personalizados */}
-        <button 
-          onClick={() => swiperRef.current?.slidePrev()}
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center cursor-pointer hover:bg-gray-100 transition-colors opacity-0 group-hover:opacity-100"
-          aria-label="Anterior"
-        >
-          <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-        
-        <button 
-          onClick={() => swiperRef.current?.slideNext()}
-          className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center cursor-pointer hover:bg-gray-100 transition-colors opacity-0 group-hover:opacity-100`}
-          aria-label="Próximo"
-        >
-          <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
-      </div>
-    ) : (
-      <SkeletonGrid itemCount={4} />
-)}
+        <div className="relative group">
+          {" "}
+          {/* Adicionei group para efeitos hover */}
+          <Swiper
+            ref={swiperRef}
+            slidesPerView={1}
+            spaceBetween={30}
+            pagination={{ dynamicBullets: true, clickable: true }}
+            breakpoints={{
+              640: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+              1310: { slidesPerView: 4 },
+            }}
+            modules={[Pagination, Navigation]}
+            className="relative"
+            onSwiper={(swiper) => {
+              // Atribui a instância do Swiper à ref
+              swiperRef.current = swiper;
+            }}
+          >
+            {filteredEvents.map((event, index) => (
+              <SwiperSlide key={index} className="select-none">
+                <Link href={`/event/${event.id}`}>
+                  <Event event={event} />
+                </Link>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          {/* Botões de navegação personalizados */}
+          <button
+            onClick={() => swiperRef.current?.slidePrev()}
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center cursor-pointer hover:bg-gray-100 transition-all opacity-100 md:opacity-0 md:group-hover:opacity-100"
+            aria-label="Anterior"
+          >
+            <svg
+              className="w-6 h-6 text-gray-700"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+          <button
+            onClick={() => swiperRef.current?.slideNext()}
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center cursor-pointer hover:bg-gray-100 transition-all opacity-100 md:opacity-0 md:group-hover:opacity-100"
+            aria-label="Próximo"
+          >
+            <svg
+              className="w-6 h-6 text-gray-700"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
+      ) : (
+        <SkeletonGrid itemCount={4} />
+      )}
     </section>
   );
 };
