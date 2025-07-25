@@ -1,5 +1,7 @@
 // components
+import CustonSelect from "@/components/CustonSelect";
 import EventSchedule from "@/components/EventSchedule";
+import Timer from "@/components/Timer";
 import Image from "next/image";
 
 import { FaRegCircleCheck } from "react-icons/fa6";
@@ -35,10 +37,10 @@ const EventDetails = async ({ params }) => {
             <div className="flex w-full max-w-[460px] flex-col justify-center gap-8 flex-1 sm:mb-12 xl:mb-0">
               <div>
                 <h2 className="h2 mb-4">{event.title}</h2>
-                <EventSchedule event={event}/>
+                <EventSchedule event={event} />
               </div>
-              <div>timer</div>
-              <div>custon select</div>
+              <Timer event={event} />
+              <CustonSelect event={event}/>
               <div>buy ticket btn</div>
             </div>
           </div>

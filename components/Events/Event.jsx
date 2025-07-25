@@ -28,7 +28,6 @@ const Event = ({ event }) => {
           <div className="flex items-center gap-3 text-accent mb-2">
             <div className="flex items-center gap-1">
               <BiCalendar />
-              {/* hardcoded date, to change*/}
               <div className="text-[15px] capitalize">{formattedDate}</div>
             </div>
 
