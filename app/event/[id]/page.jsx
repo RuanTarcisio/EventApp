@@ -1,4 +1,5 @@
 // components
+import BuyTicket from "@/components/BuyTicket";
 import CustonSelect from "@/components/CustonSelect";
 import EventSchedule from "@/components/EventSchedule";
 import Timer from "@/components/Timer";
@@ -40,8 +41,8 @@ const EventDetails = async ({ params }) => {
                 <EventSchedule event={event} />
               </div>
               <Timer event={event} />
-              <CustonSelect event={event}/>
-              <div>buy ticket btn</div>
+              <CustonSelect event={event} />
+              <BuyTicket event={event} />
             </div>
           </div>
 

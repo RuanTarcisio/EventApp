@@ -109,28 +109,28 @@ const Timer = ({ event }) => {
       <div className="text-center border-[3px] border-accent rounded-full w-[100px] h-[100px] flex items-center justify-center">
         <div>
           <div className="text-3xl font-semibold">{days}</div>
-          <div className="text-sm uppercase font-medium">Days</div>
+          <div className="text-sm uppercase font-medium">Dias</div>
         </div>
       </div>
       {/* hours */}
       <div className="text-center border-[3px] border-accent rounded-full w-[100px] h-[100px] flex items-center justify-center">
         <div>
           <div className="text-3xl font-semibold">{hours}</div>
-          <div className="text-sm uppercase font-medium">Hours</div>
+          <div className="text-sm uppercase font-medium">Horas</div>
         </div>
       </div>
       {/* minutes */}
       <div className="text-center border-[3px] border-accent rounded-full w-[100px] h-[100px] flex items-center justify-center">
         <div>
           <div className="text-3xl font-semibold">{minutes}</div>
-          <div className="text-sm uppercase font-medium">Minutes</div>
+          <div className="text-sm uppercase font-medium">Minutos</div>
         </div>
       </div>
       {/* seconds */}
       <div className="text-center border-[3px] border-accent rounded-full w-[100px] h-[100px] flex items-center justify-center">
         <div>
           <div className="text-3xl font-semibold">{seconds}</div>
-          <div className="text-sm uppercase font-medium">Seconds</div>
+          <div className="text-sm uppercase font-medium">Segundos</div>
         </div>
       </div>
     </div>
