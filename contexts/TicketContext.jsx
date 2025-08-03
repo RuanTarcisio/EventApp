@@ -69,7 +69,6 @@ const TicketProvider = ({ children }) => {
       totalPrice,
     };
     setCheckoutData(ticketData); // in case if we want to use the data for the checkout page
-    console.log(checkoutData)
   };
 
   const increaseAmount = () => {

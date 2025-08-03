@@ -2,6 +2,7 @@ import { EventContext } from "@/contexts/EventContext";
 import React, { useContext } from "react";
 import Event from "./Event";
 import SkeletonGrid from "../SkeletonGrid";
+import Link from "next/link";
 
 const EventList = () => {
   const { filteredEvents, isLoading, error } = useContext(EventContext);
@@ -25,7 +26,9 @@ const EventList = () => {
           {filteredEvents.map((event, index) => {
             return (
               <div key={index}>
-                <Event event={event} />
+                <Link href={`/event/${event.id}`}>
+                  <Event event={event} />
+                </Link>
               </div>
             );
           })}

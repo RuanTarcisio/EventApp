@@ -2,6 +2,7 @@
 import BuyTicket from "@/components/BuyTicket";
 import CustonSelect from "@/components/CustonSelect";
 import EventSchedule from "@/components/EventSchedule";
+import Organizers from "@/components/Organizers";
 import Timer from "@/components/Timer";
 import Image from "next/image";
 
@@ -90,7 +91,8 @@ const EventDetails = async ({ params }) => {
               </div>
               {/* organizers */}
             </div>
-            <div className="w-full max-w-[460px]">organizers</div>
+            <div className="w-full max-w-[460px]">
+              <Organizers event={event}/></div>
           </div>
         </div>
       </div>
