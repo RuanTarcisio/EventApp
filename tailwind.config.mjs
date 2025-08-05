@@ -7,43 +7,65 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      container: {
-        center: true,
-        padding: "15px",
-      },
-      screens: {
-        sm: "640px",
-        md: "768px",
-        lg: "1024px",
-        xl: "1310px",
-      },
-      fontFamily: {
-        primary: "var(--font-poppins)",
-		secondary: "var(--font-caveat)"
-      },
-      colors: {
-        primary: "#0f1017",
-        accent: {
-          DEFAULT: "#e14817",
-          hover: "#cb4419",
-        },
-        secondary: {
-          DEFAULT: "#1b1c23",
-          hover: "#1f212d",
-        },
-        tertiary: {
-          DEFAULT: "#26272e",
-          hover: "#24252c",
-        },
-        grey: "#737373",
-      },
-      backgroundImage: {
-        hero_1: "url(/assets/hero/hero-bg1.png)",
-        hero_2: "url(/assets/hero/hero-bg2.png)",
-        pattern: "url(/assets/pattern_bg.png)",
-      },
-    },
+  	extend: {
+  		container: {
+  			center: true,
+  			padding: '15px'
+  		},
+  		screens: {
+  			sm: '640px',
+  			md: '768px',
+  			lg: '1024px',
+  			xl: '1310px'
+  		},
+  		fontFamily: {
+  			primary: 'var(--font-poppins)',
+  			secondary: 'var(--font-caveat)'
+  		},
+  		colors: {
+  			primary: '#0f1017',
+  			accent: {
+  				DEFAULT: '#e14817',
+  				hover: '#cb4419'
+  			},
+  			secondary: {
+  				DEFAULT: '#1b1c23',
+  				hover: '#1f212d'
+  			},
+  			tertiary: {
+  				DEFAULT: '#26272e',
+  				hover: '#24252c'
+  			},
+  			grey: '#737373'
+  		},
+  		backgroundImage: {
+  			hero_1: 'url(/assets/hero/hero-bg1.png)',
+  			hero_2: 'url(/assets/hero/hero-bg2.png)',
+  			pattern: 'url(/assets/pattern_bg.png)'
+  		},
+  		keyframes: {
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
+  			}
+  		},
+  		animation: {
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out'
+  		}
+  	}
   },
   plugins: [require("tailwindcss-animate")],
 };

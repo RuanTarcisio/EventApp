@@ -7,6 +7,8 @@ import TicketProvider from "@/contexts/TicketContext";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CartProvider from "@/components/CartProvider";
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata = {
   title: "Events App",
@@ -33,9 +35,12 @@ export default function RootLayout({ children }) {
           <body
             className={`${poppins.variable} ${caveat.variable} antialiased`}
           >
-            <Header />
-            {children}
-            <Footer />
+            <CartProvider>
+              <Header />
+              {children}
+              <Toaster />
+              <Footer />
+            </CartProvider>
           </body>
         </html>
       </TicketProvider>
