@@ -88,15 +88,15 @@ const EventProvider = ({ children }) => {
     const fetchEvents = async () => {
       setIsLoading(true);
       try {
-        const apiUrl =
-          process.env.NODE_ENV === "development"
-            ? "http://localhost:4000/events"
-            : `https://eventapp-5yie.onrender.com/api/events`;
-        const res = await fetch(apiUrl);
+        const res = await fetch(
+          `${process.env.NEXT_PUBLIC_API_URL}/objects/68925629b032ab872be93aed?read_key=${process.env.NEXT_PUBLIC_READ_KEY}&depth=1&props=slug,title,metadata`,
+          { next: { revalidate: 120 } }
+        );
 
         if (!res.ok) throw new Error("Failed to fetch events");
         const data = await res.json();
-        setEvents(data);
+
+        setEvents(data.object.metadata.events.events);
       } catch (err) {
         setError(err.message || "Error fetching data");
       } finally {
@@ -132,10 +132,10 @@ const EventProvider = ({ children }) => {
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     // format options
-    const options = {weekday: "short", month: "short", day: "numeric"};
+    const options = { weekday: "short", month: "short", day: "numeric" };
     // return formated date
-    return date.toLocaleDateString("pt-BR", options)
-  }
+    return date.toLocaleDateString("pt-BR", options);
+  };
 
   return (
     <EventContext.Provider

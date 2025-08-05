@@ -112,8 +112,6 @@ const UpcomingEvents = () => {
       {/* slider */}
       {filteredEvents.length > 0 ? (
         <div className="relative group">
-          {" "}
-          {/* Adicionei group para efeitos hover */}
           <Swiper
             ref={swiperRef}
             slidesPerView={1}
@@ -132,7 +130,7 @@ const UpcomingEvents = () => {
             }}
           >
             {filteredEvents.map((event, index) => (
-              <SwiperSlide key={index} className="select-none">
+              <SwiperSlide key={index} className="select-none mb-14">
                 <Link href={`/event/${event.id}`}>
                   <Event event={event} />
                 </Link>

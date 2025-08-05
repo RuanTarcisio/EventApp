@@ -40,8 +40,6 @@ const RecommendedEvents = () => {
       </div>
       {filterRecommendedEvents.length > 0 ? (
         <div className="relative group">
-          {" "}
-          {/* Adicionei group para efeitos hover */}
           <Swiper
             ref={swiperRef}
             slidesPerView={1}
@@ -53,14 +51,14 @@ const RecommendedEvents = () => {
               1310: { slidesPerView: 4 },
             }}
             modules={[Pagination, Navigation]}
-            className="relative w-full h-[500px]"
+            className="relative"
             onSwiper={(swiper) => {
               // Atribui a instância do Swiper à ref
               swiperRef.current = swiper;
             }}
           >
             {filterRecommendedEvents.map((event, index) => (
-              <SwiperSlide key={index} className="select-none">
+              <SwiperSlide key={index} className="select-none mb-14">
                 <Link href={`/event/${event.id}`}>
                   <Event event={event} />
                 </Link>

@@ -1,8 +1,8 @@
+"use client"
+
 import { useToast } from "@/hooks/use-toast";
 import { FaCartPlus } from "react-icons/fa";
 import { useShoppingCart } from "use-shopping-cart";
-
-
 
 const AddToCartButton = ({
   name,
@@ -12,12 +12,13 @@ const AddToCartButton = ({
   quantity,
   image,
   seat,
+  price_id,
 }) => {
   const { addItem } = useShoppingCart();
   const { toast } = useToast();
 
   const event = {
-    id: id,
+    id: price_id,
     currency: currency,
     name: name,
     description: description,
@@ -25,6 +26,8 @@ const AddToCartButton = ({
     image: image,
     price: seat.price,
     seat: seat.seat,
+    id_item: id,
+    currency: "BRL"
   };
 
   return (

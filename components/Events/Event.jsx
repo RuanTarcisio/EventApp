@@ -9,7 +9,8 @@ const Event = ({ event }) => {
   const formattedDate = formatDate(dbDate);
 
   return (
-    <div className="bg-white/5 hover:bg-white/10 transition-all rounded-3xl flex flex-col justify-start p-4 w-full max-w-[320px] sm:max-w-full mx-auto sm:mx-0">
+   <div className="bg-white/5 hover:bg-white/10 transition-all rounded-3xl flex flex-col justify-start p-4 w-full max-w-[320px] sm:max-w-full mx-auto sm:mx-0 h-[400px]">
+
       <div className="relative w-full aspect-[4/3] mb-10">
         <Image
           src={event.img_sm}

@@ -5,6 +5,7 @@ import { TicketContext } from "@/contexts/TicketContext"; // Seu contexto de car
 import { BiMinus, BiPlus } from "react-icons/bi";
 import { HiTicket } from "react-icons/hi2"; // ou 'react-icons/hi' se for HiTicket
 import AddToCartButton from "./AddToCartButton";
+import CheckoutBtn from "./CheckoutBtn";
 
 const BuyAndAddToCartButtons = ({ event }) => {
   // Nome do componente mais descritivo
@@ -16,8 +17,8 @@ const BuyAndAddToCartButtons = ({ event }) => {
     decreaseAmount,
     increaseAmount,
     itemAmount,
-    seat, 
-    handleAddToCart,// Estado de carregamento do carrinho do contexto
+    seat,
+    handleAddToCart, // Estado de carregamento do carrinho do contexto
   } = useContext(TicketContext);
 
   //const [isLoadingAddToCart, setIsLoadingAddToCart] = useState(false); // Carregamento para Add to Cart
@@ -67,7 +68,7 @@ const BuyAndAddToCartButtons = ({ event }) => {
         { id: event.id, quantity: quantity, price: event.price },
       ]);
       if (!success) {
-        // initiateCheckout provavelmente já redireciona, se retornar false, houve erro
+        
         console.error("Falha ao iniciar o checkout.");
         // Opcional: mostrar erro para o usuário
       }
@@ -111,27 +112,34 @@ const BuyAndAddToCartButtons = ({ event }) => {
           className="bg-green-400/5 hover:bg-primary-hover transition-all p-4 rounded-full flex-1 flex items-center justify-center border-emerald-400" // Ajuste as classes Tailwind para cores e layout
           disabled={isLoadingAddToCart || isLoadingBuyNow || cartLoading} // Desabilita se qualquer ação estiver em andamento
         > */}
-
-          <AddToCartButton 
-            name = {event.title}
-            id={event.id}
-            currency="BRL"
-            description={event.description}
-            quantity={itemAmount}
-            image={event.img_sm}
-            seat={seat}
-          />
-          {/* {isLoadingAddToCart ? (
+        <AddToCartButton
+          name={event.title}
+          id={event.id}
+          currency="BRL"
+          description={event.description}
+          quantity={itemAmount}
+          image={event.img_sm}
+          seat={seat}
+          price_id={event.price_id}
+        />
+        {/* {isLoadingAddToCart ? (
             <div className="">Adicionando...</div>
           ) : (
             
           )} */}
         {/* </button> */}
         {/* Botão "Comprar Agora" */}
+        {/* <CheckoutBtn btnStyle={"bg-accent hover:bg-accent-hover transition-all p-4 rounded-full flex-1 flex items-center justify-center"} /> */}
         <button
           onClick={handleBuyNow}
           className="bg-accent hover:bg-accent-hover transition-all p-4 rounded-full flex-1 flex items-center justify-center" // Ajuste as classes Tailwind para cores e layout
-          disabled={{/*isLoadingAddToCart*/} || isLoadingBuyNow || cartLoading}
+          disabled={
+            {
+              /*isLoadingAddToCart*/
+            } ||
+            isLoadingBuyNow ||
+            cartLoading
+          }
         >
           {isLoadingBuyNow ? (
             <div className="">Processando...</div>

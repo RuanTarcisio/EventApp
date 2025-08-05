@@ -9,6 +9,7 @@
       "hour": "20:00",
       "title": "Rock Legends Live Concert",
       "location": "Espaço das Américas, São Paulo",
+      "price_id": "price_1Rskf8CJ1u0SzKZz7HfFlpSF",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
       "seats": [
         {
@@ -94,6 +95,7 @@
       "hour": "19:00",
       "title": "Jazz Night Live",
       "location": "Vivo Rio, Rio de Janeiro",
+      "price_id": "price_1RskdnCJ1u0SzKZzTCSn5igq",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
       "seats": [
         {
@@ -179,6 +181,7 @@
       "hour": "10:00",
       "title": "Festival de Arte Urbana",
       "location": "Vila Madalena, São Paulo",
+      "price_id": "price_1RskppCJ1u0SzKZzk7lL4VBL",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -283,6 +286,7 @@
       "hour": "11:00",
       "title": "Exposição de Arte Impressionista",
       "location": "Museu de Arte de São Paulo (MASP), São Paulo",
+      "price_id": "price_1RskqFCJ1u0SzKZzAAkTZ2ef",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.paintings.",
       "seats": [
         {
@@ -368,6 +372,7 @@
       "hour": "18:00",
       "title": "Exposição de Art Nouveau",
       "location": "Museu Nacional de Belas Artes, Rio de Janeiro",
+      "price_id": "price_1RskrMCJ1u0SzKZzFpno2rgr",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
       "seats": [
         {
@@ -453,6 +458,7 @@
       "hour": "14:00",
       "title": "Festival Gastronômico Gourmet",
       "location": "Parque Ibirapuera, São Paulo",
+      "price_id": "price_1RskrqCJ1u0SzKZzmmP4RpTQ",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
       "seats": [
         {
@@ -538,6 +544,7 @@
       "hour": "12:00",
       "title": "Aula de Culinária Vegan Delights",
       "location": "Escola de Culinária Le Cordon Bleu, Rio de Janeiro",
+      "price_id": "price_1RsktYCJ1u0SzKZzxUcF1zD5",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -604,6 +611,7 @@
       "hour": "09:30",
       "title": "Torneio Internacional de Críquete",
       "location": "Estádio do Morumbi, São Paulo",
+      "price_id": "price_1RsktYCJ1u0SzKZzxUcF1zD5",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
       "seats": [
         {
@@ -670,6 +678,7 @@
       "hour": "16:00",
       "title": "Final do Campeonato Brasileiro de Basquete",
       "location": "Ginásio do Ibirapuera, São Paulo",
+      "price_id": "price_1Rsku2CJ1u0SzKZz0UBaALUV",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -773,6 +782,7 @@
       "date": "2025-12-25",
       "hour": "20:00",
       "title": "Performance de Sinfonia Clássica",
+      "price_id": "price_1RskuXCJ1u0SzKZzoJRb88A0",
       "location": "Theatro Municipal, Rio de Janeiro",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
@@ -859,6 +869,7 @@
       "hour": "14:00",
       "title": "Festival de Churrasco Extravaganza",
       "location": "Parque da Cidade, Brasília",
+      "price_id": "price_1RskutCJ1u0SzKZzyJXVScb2",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -944,6 +955,7 @@
       "hour": "17:00",
       "title": "Eliminatórias da Copa do Mundo de Futebol",
       "location": "Arena Corinthians, São Paulo",
+      "price_id": "price_1RskvNCJ1u0SzKZzRupx8phr",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -1029,6 +1041,7 @@
       "hour": "18:00",
       "title": "Simpósio de Arte Moderna",
       "location": "Instituto Tomie Ohtake, São Paulo",
+      "price_id": "price_1RskvsCJ1u0SzKZzpLF9SQzK",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -1114,6 +1127,7 @@
       "hour": "19:00",
       "title": "Performance de Gala de Ópera",
       "location": "Teatro Amazonas, Manaus",
+      "price_id": "price_1RskwaCJ1u0SzKZzyiuRr65A",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -1180,6 +1194,7 @@
       "hour": "13:00",
       "title": "Masterclass de Sushi",
       "location": "Escola de Culinária Nihonryori, São Paulo",
+      "price_id": "price_1Rskx3CJ1u0SzKZzF15KKJYQ",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -1246,6 +1261,7 @@
       "hour": "10:00",
       "title": "Campeonato Brasileiro de Tênis",
       "location": "Parque Olímpico, Rio de Janeiro",
+      "price_id": "price_1RskxVCJ1u0SzKZzCB734M5G",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -1373,6 +1389,7 @@
       "hour": "11:00",
       "title": "Exposição de Fotografia",
       "location": "Pinacoteca de São Paulo, São Paulo",
+      "price_id": "price_1RskxsCJ1u0SzKZzLatVlaz8",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -1439,6 +1456,7 @@
       "hour": "20:00",
       "title": "Festival de Indie Rock",
       "location": "Fundição Progresso, Rio de Janeiro",
+      "price_id": "price_1RskyWCJ1u0SzKZzHUA2amyY",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {
@@ -1504,6 +1522,7 @@
       "date": "2025-04-10",
       "hour": "12:00",
       "title": "Festival de Comida Vegana",
+      "price_id": "price_1Rskz4CJ1u0SzKZzPL61wFFY", 
       "location": "Parque da Jaqueira, Recife",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
