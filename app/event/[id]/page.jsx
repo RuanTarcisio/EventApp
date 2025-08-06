@@ -1,4 +1,6 @@
-// components
+// components/EventDetails.jsx
+
+// (imports permanecem os mesmos)
 import BuyTicket from "@/components/BuyTicket";
 import CustonSelect from "@/components/CustonSelect";
 import EventSchedule from "@/components/EventSchedule";
@@ -10,15 +12,37 @@ import { FaRegCircleCheck } from "react-icons/fa6";
 
 const EventDetails = async ({ params }) => {
   const { id } = await params;
+  const COSMIC_URL = process.env.NEXT_PUBLIC_COSMIC_URL;
+  const READ_KEY = process.env.NEXT_PUBLIC_READ_KEY;
 
-  // fetch event based on the id
-  const fetchEvent = async (id) => {
-    const res = await fetch(`http://localhost:4000/events/${id}`);
-    if (!res.ok) throw new Error("Failed to fetch event");
-    return res.json();
+  const fetchEvents = async () => {
+    const res = await fetch(
+      `${COSMIC_URL}/objects/68925629b032ab872be93aed?read_key=${READ_KEY}&depth=1&props=slug,title,metadata`,
+      { next: { revalidate: 120 } }
+    );
+
+    if (!res.ok) {
+      throw new Error("Failed to fetch events from Cosmic");
+    }
+
+    const data = await res.json();
+    return data.object.metadata.events.events;
   };
 
-  const event = await fetchEvent(id);
+  const allEvents = await fetchEvents();
+
+  // Encontra o evento com base no ID
+  const event = allEvents.find((e) => e.id === id);
+
+  // Lida com o caso de o evento não ser encontrado
+  if (!event) {
+    return (
+      <div className="container mx-auto py-48 text-center">
+        <h1 className="h1">Event Not Found</h1>
+        <p>The event you are looking for does not exist.</p>
+      </div>
+    );
+  }
 
   return (
     <section className="min-h-screen flex items-center py-8 sm:py-48">
@@ -41,6 +65,7 @@ const EventDetails = async ({ params }) => {
                 <h2 className="h2 mb-4">{event.title}</h2>
                 <EventSchedule event={event} />
               </div>
+              {/* Note: The Timer, CustomSelect, and BuyTicket components will need to be Client Components if they use hooks like useState or useEffect */}
               <Timer event={event} />
               <CustonSelect event={event} />
               <BuyTicket event={event} />
@@ -50,7 +75,7 @@ const EventDetails = async ({ params }) => {
           {/* event details 2 */}
           <div className="flex flex-col xl:flex-row gap-8 xl:gap-24">
             {/* text */}
-            <div className="w-full xl:max-w-[670px flex flex-col gap-8 xl:gap-12]">
+            <div className="w-full xl:max-w-[670px] flex flex-col gap-8 xl:gap-12">
               <p className="text-grey">{event.description} </p>
               <div>
                 <h3 className="h3 mb-6">Requirements for the event</h3>
@@ -59,40 +84,20 @@ const EventDetails = async ({ params }) => {
                     <span className="text-accent text-xl">
                       <FaRegCircleCheck />
                     </span>
-                    <p className="text-gray-">
-                      Apenas descrição a ser ajustada em breve.
-                    </p>
+                    <p className="text-gray-">{/* TODO: Adicionar requisitos do evento */}</p>
                   </li>
                   <li className="flex gap-3 items-center">
                     <span className="text-accent text-xl">
                       <FaRegCircleCheck />
                     </span>
-                    <p className="text-gray-">
-                      Apenas descrição a ser ajustada em breve.
-                    </p>
-                  </li>
-                  <li className="flex gap-3 items-center">
-                    <span className="text-accent text-xl">
-                      <FaRegCircleCheck />
-                    </span>
-                    <p className="text-gray-">
-                      Apenas descrição a ser ajustada em breve.
-                    </p>
-                  </li>
-                  <li className="flex gap-3 items-center">
-                    <span className="text-accent text-xl">
-                      <FaRegCircleCheck />
-                    </span>
-                    <p className="text-gray-">
-                      Apenas descrição a ser ajustada em breve.
-                    </p>
+                    <p className="text-gray-">{/* TODO: Adicionar requisitos do evento */}</p>
                   </li>
                 </ul>
               </div>
-              {/* organizers */}
             </div>
             <div className="w-full max-w-[460px]">
-              <Organizers event={event}/></div>
+              <Organizers event={event}/>
+            </div>
           </div>
         </div>
       </div>

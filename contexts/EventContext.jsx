@@ -89,7 +89,7 @@ const EventProvider = ({ children }) => {
       setIsLoading(true);
       try {
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}/objects/68925629b032ab872be93aed?read_key=${process.env.NEXT_PUBLIC_READ_KEY}&depth=1&props=slug,title,metadata`,
+          `${process.env.NEXT_PUBLIC_COSMIC_URL}/objects/68925629b032ab872be93aed?read_key=${process.env.NEXT_PUBLIC_READ_KEY}&depth=1&props=slug,title,metadata`,
           { next: { revalidate: 120 } }
         );
 
