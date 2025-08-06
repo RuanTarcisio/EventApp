@@ -84,19 +84,53 @@ const EventDetails = async ({ params }) => {
                     <span className="text-accent text-xl">
                       <FaRegCircleCheck />
                     </span>
-                    <p className="text-gray-">{/* TODO: Adicionar requisitos do evento */}</p>
+                    <p className="text-gray-">
+                      Chegue com antecedência": Recomenda-se chegar 1 hora antes
+                      do horário de início para garantir seu assento e evitar
+                      filas.
+                    </p>
+                  </li>
+                  <li className="flex gap-3 items-center">
+                    <span className="text-accent text-xl">
+                      <FaRegCircleCheck className="justify-around" />
+                    </span>
+                    <p className="text-gray-">
+                      Documento de identificação com foto": Necessário
+                      apresentar um documento válido (RG, CNH) na entrada.
+                    </p>
                   </li>
                   <li className="flex gap-3 items-center">
                     <span className="text-accent text-xl">
                       <FaRegCircleCheck />
                     </span>
-                    <p className="text-gray-">{/* TODO: Adicionar requisitos do evento */}</p>
+                    <p className="text-gray-">
+                      Proibido fumar em áreas fechadas": Respeite a legislação
+                      local e as regras do local do evento.
+                    </p>
+                  </li>
+                  <li className="flex gap-3 items-center">
+                    <span className="text-accent text-xl">
+                      <FaRegCircleCheck />
+                    </span>
+                    <p className="text-gray-">
+                      Não é permitida a entrada de alimentos e bebidas": O local
+                      conta com uma variedade de opções de lanchonetes e bares.
+                    </p>
+                  </li>
+                  <li className="flex gap-3 items-center">
+                    <span className="text-accent text-xl">
+                      <FaRegCircleCheck />
+                    </span>
+                    <p className="text-gray-">
+                      Proibido objetos cortantes ou de vidro": A segurança do
+                      estádio fará uma revista na entrada.
+                    </p>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="w-full max-w-[460px]">
-              <Organizers event={event}/>
+              <Organizers event={event} />
             </div>
           </div>
         </div>

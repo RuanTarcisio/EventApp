@@ -32,7 +32,7 @@ const AddToCartButton = ({
 
   return (
     <button
-      className="flex items-center bg-green-500/10 gap-2 h-full rounded-full"
+      className="flex items-center p-5 md:p-0 text-center bg-green-500/10 gap-4 h-full rounded-full justify-center"
       onClick={() => {
         addItem(event);
         toast({
@@ -40,9 +40,9 @@ const AddToCartButton = ({
         });
       }}
     >
-      <div className="flex flex-row items-center">
-        <FaCartPlus className="text-3xl ml-3" />
-        <div className="">Adicionar ao Carrinho</div>
+      <div className="flex flex-row items-center gap-4">
+        <FaCartPlus className="flex text-3xl ml-3" />
+        <div className="flex">Adicionar ao Carrinho</div>
       </div>
     </button>
   );

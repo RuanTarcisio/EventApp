@@ -103,7 +103,7 @@ const BuyAndAddToCartButtons = ({ event }) => {
       </div>
 
       {/* Botões de Ação */}
-      <div className="flex flex-col md:flex-row gap-4 h-[70px] w-full justify-center">
+      <div className="flex flex-col md:flex-row gap-4  w-full justify-center h-full">
         {" "}
         {/* Container para os dois botões */}
         {/* Botão "Adicionar ao Carrinho" */}
@@ -132,7 +132,7 @@ const BuyAndAddToCartButtons = ({ event }) => {
         {/* <CheckoutBtn btnStyle={"bg-accent hover:bg-accent-hover transition-all p-4 rounded-full flex-1 flex items-center justify-center"} /> */}
         <button
           onClick={handleBuyNow}
-          className="bg-accent hover:bg-accent-hover transition-all p-4 rounded-full flex-1 flex items-center justify-center" // Ajuste as classes Tailwind para cores e layout
+          className="bg-accent hover:bg-accent-hover transition-all p-2 rounded-full flex-1 flex items-center justify-center" // Ajuste as classes Tailwind para cores e layout
           disabled={
             {
               /*isLoadingAddToCart*/
