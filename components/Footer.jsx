@@ -65,8 +65,8 @@ const Footer = () => {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row gap-6 items-center justify-between">
             {/* logo */}
-            <Link href="/" className="relative flex w-[78px] h-[30px]">
-              <Image src="/assets/footer/logo.svg" fill alt="" />
+            <Link href="/" className="relative flex w-[78px] h-[78px]">
+              <Image src="/assets/footer/logo2.png" fill alt="" />
             </Link>
             <p className="text-sm">
               Copyright &copy; 2025. All rights reserved.

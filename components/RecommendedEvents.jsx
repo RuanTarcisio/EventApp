@@ -14,8 +14,6 @@ import "swiper/css/navigation";
 // import swiper required modules
 import { Pagination, Navigation } from "swiper/modules";
 
-import { Tabs, TabsList, TabsTrigger } from "./ui/tabs";
-
 // import components
 import Link from "next/link";
 import Image from "next/image";

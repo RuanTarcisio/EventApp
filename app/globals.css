@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-primary text-white font-primary;
+  @apply bg-primary text-black font-primary;
 }
 
 .h1,
